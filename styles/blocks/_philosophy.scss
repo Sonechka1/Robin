@@ -1,0 +1,91 @@
+.section {
+
+    
+}
+.section__peach-acccent {
+}
+.section__body {
+}
+.philosophy {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile{
+        flex-direction: column;
+        
+    }
+}
+.philosophy__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 576px;
+    padding-top: 120px;
+    justify-content: center;
+    padding-right: 44px;
+
+    @include tablet{
+        padding-top: 120px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+    @include mobile{
+        padding-top: 48px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 48px;
+    }
+}
+.philosophy__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 55px;
+    color: var(--level-1);
+
+    @include mobile{
+        font-size: 32px;
+    }
+}
+.philosophy__desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--dark-grey);
+    margin-bottom: 110px;
+    
+    @include mobile{
+        margin-bottom: 40px;
+        
+    }
+}
+.philosophy__link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--level-1);
+   
+    margin-bottom: 120px;
+    
+    & a{
+        border-bottom: 1px solid var(--light-grey);
+        padding-bottom: 4px;
+    }
+    @include tablet{
+        &__image{
+            width: 384px;
+            height: 600px;
+        }
+    }
+
+    @include mobile{
+        margin-bottom: 0;
+        
+    }
+  
+    
+
+   
+}

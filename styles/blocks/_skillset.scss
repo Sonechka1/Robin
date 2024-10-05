@@ -1,0 +1,111 @@
+
+.skillset {
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info{
+
+        display: flex;
+        flex-direction: column;
+        column-gap: 12px ;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 120px;
+        align-items: start;
+        padding: 48px 20px;
+
+        @include mobile{
+           margin-top: 120px;
+        }
+        
+        &-title{
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 55px;
+            color: var(--white);
+
+            @include mobile{
+                font-size: 32px;
+            }
+        }
+
+        &-desc{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--light-grey);
+            width: 368px;
+            padding-top: 24px;
+            
+
+            @include tablet{
+               width: 100%;
+            }
+            
+            
+        
+        }
+    }
+
+    &__inner{
+        display: grid;
+        grid-template-columns: (repeat(2, 416px));
+        gap: 72px;
+        margin-top: 120px;
+        padding: 48px 72px;
+        width: 100%;
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+ 
+         }
+    }
+    
+
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        &-desc{
+            max-width: 368px;
+        }
+    }
+
+   
+}
+
+.skillset__icon {
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 120px;
+
+
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+         }
+
+      
+         
+    }
+
+    &__item {
+        padding: 55px 128px;
+        border: 1px solid var(--level-1);
+        min-width: 340px;
+
+        @include mobile{
+            min-width: 180px;
+            padding: 40px;
+            overflow-x: hidden;
+        }
+    }
+}
+
+
