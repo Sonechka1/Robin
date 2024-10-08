@@ -1,0 +1,83 @@
+.about-me {
+    column-gap: 72px;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 64px;
+    }
+
+
+}
+.about-me__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @include tablet {
+        row-gap: 10px
+    }
+
+    &--desc{
+        color: var(--light-grey);
+    }
+}
+.about-me__inner--title {
+}
+.title {
+}
+.about-me__inner--desc {
+}
+.description {
+}
+.about-me__inner--link {
+}
+.link {
+}
+.about-me__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+}
+.about-me__card {
+    max-width: 636px;
+
+    @include tablet{
+        max-width: 332px;
+        width: 100%;
+    }
+    
+    border: 1px solid var(--dark-grey);
+    &__inner{
+        padding: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        @include tablet{
+            padding: 32px;
+        }
+    }
+    
+    &--image{
+        padding: 0;
+    }
+    &--autor{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--dark-grey);
+        line-height: 4px;
+    }
+
+}
+.about-me__card--image {
+}
+.about-me__card--quote {
+}
+.about-me__card--autor {
+}
+.about-me__card--company {
+}

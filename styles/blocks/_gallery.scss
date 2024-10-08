@@ -1,0 +1,40 @@
+.gallery {
+    margin-top: 40px;
+    &__image{
+        width: 306px;
+        height: 420px;
+
+        @include tablet{
+            width: 332px;
+            height: 420px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 24px;
+    
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__item{
+        @include tablet{
+            width: 100%;
+        }
+
+        @include mobile{
+            display: flex;
+            justify-content: center;
+        
+        }
+    }
+
+}

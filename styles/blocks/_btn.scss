@@ -1,0 +1,18 @@
+.button{
+    border: 1px solid var(--purple);
+    padding: 24px 32px;
+    width: 247px;
+    height: 75px;
+    background-color: transparent;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--white);
+
+    @include hover{
+        background-color: var(--purple);
+    }
+}

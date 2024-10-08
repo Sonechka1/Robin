@@ -61,6 +61,7 @@
         @include mobile{
             display: flex;
             flex-direction: column;
+            padding: 64px 20px;
  
          }
     }
@@ -85,7 +86,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin-top: 120px;
-
+        // padding: 10px 72px;
 
         @include tablet{
             grid-template-columns: repeat(2, 1fr);

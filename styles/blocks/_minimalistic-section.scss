@@ -1,12 +1,5 @@
-.section {
 
-    
-}
-.section__peach-acccent {
-}
-.section__body {
-}
-.philosophy {
+.minimalistic-section {
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -16,7 +9,7 @@
         
     }
 }
-.philosophy__inner {
+.minimalistic-section__inner {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -37,7 +30,7 @@
         padding-bottom: 48px;
     }
 }
-.philosophy__title {
+.minimalistic-section__title {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 55px;
@@ -47,7 +40,7 @@
         font-size: 32px;
     }
 }
-.philosophy__desc {
+.minimalistic-section__desc {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -60,7 +53,7 @@
         
     }
 }
-.philosophy__link {
+.minimalistic-section__link {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;

@@ -1,8 +1,12 @@
 .section{
     // padding-block: var(--section-padding-y);
+    margin-bottom: 120px;
 
     &__peach-acccent{
         background-color:  var(--peach-accent);
+    }
+    &__violet-accent{
+        background-color: var(--violet-accent);
     }
     &__header{
         display: flex;

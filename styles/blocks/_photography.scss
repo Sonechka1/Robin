@@ -1,0 +1,42 @@
+
+.photography {
+    &__inner {
+         display: flex;
+         flex-direction: column;
+         row-gap: 24px;
+         padding-bottom: 64px;
+         
+
+         &--desc{
+            color: var(--light-grey);
+            width: 50%;
+
+            @include tablet{
+                width: 100%;
+            }
+            &--desc{
+              
+                @include mobile{
+                    max-width: 320px;
+                }
+            }
+         }
+    }
+
+    &__buttons{
+        display: flex;
+        width: 490px;
+        column-gap: 24px;
+
+        @include mobile{
+            display: grid;
+            grid-template-columns: repeat( 2 , 1fr);
+            gap: 24px;
+        }
+    }
+    &__button{
+       height: 51px;
+       padding: 12px 16px;
+    }
+
+}
