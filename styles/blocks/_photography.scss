@@ -30,13 +30,19 @@
 
         @include mobile{
             display: grid;
-            grid-template-columns: repeat( 2 , 1fr);
+            grid-template-columns:148px 148px;
             gap: 24px;
+            justify-content: center;
+            max-width: 100%;
+           
         }
     }
     &__button{
        height: 51px;
        padding: 12px 16px;
+       @include mobile{
+        max-width: 148px;
+       }
     }
 
 }
