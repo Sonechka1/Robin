@@ -5,7 +5,7 @@
 #### Используемые технологии:
 
 - HTML,
-- SCSS,
+- SCSS
 
 
 ✨[Смотреть демо](https://sonechka1.github.io/Robin/)✨
